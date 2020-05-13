@@ -104,7 +104,6 @@ engine:
 #   tags: [ abc ]
 
 recognizer:
-  import_preset: default
   patterns:
     punct: '^/([0-9]|10|[A-Za-z]+)$'  # / 开头识别为符号。
     # make_dict: "^[a-z]+'.+$"  # 含 "'" 时启用手动造词
@@ -163,7 +162,7 @@ history_encoder:
   enable_user_dict: true  # 本开关需开启，否则 encode_commit_history 选项不起作用
   encode_commit_history: true
 
-# 手动造词翻译器，当输入含有 "'" 时生效
+# 手动造词翻译器，当输入含有 "X" 时生效
 make_dict:
   __include: translator
   initial_quality: 10

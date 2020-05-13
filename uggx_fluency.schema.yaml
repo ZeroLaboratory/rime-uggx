@@ -56,7 +56,6 @@ engine:
     # - single_char_filter # 单字过滤器，屏蔽词组
 
 recognizer:
-  import_preset: default
   patterns:
     punct: '^/([0-9]|10|[A-Za-z]+)$'  # / 开头识别为符号。
     pinyin_simp: "`[a-z']*$"  # 反查引導鍵 以 ` 开头
